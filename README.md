@@ -3,7 +3,7 @@
 
 ### 使用
 * 获取一个可以访问的markdown文件地址，比如`http://soft.xiaoz.org/readme.md`
-* 然后访问[https://markdown.win/api.php?url=http://soft.xiaoz.org/readme.md](https://markdown.win/api.php?url=http://soft.xiaoz.org/readme.md "https://markdown.win/api.php?url=http://soft.xiaoz.org/readme.md") 试试效果。
+* 然后访问 [https://markdown.win/api.php?url=http://soft.xiaoz.org/readme.md](https://markdown.win/api.php?url=http://soft.xiaoz.org/readme.md "https://markdown.win/api.php?url=http://soft.xiaoz.org/readme.md") 试试效果。
 * API说明请参考 [https://doc.xiaoz.me/](https://doc.xiaoz.me/docs/api/mdtohtml-api)
 
 ### 演示地址
