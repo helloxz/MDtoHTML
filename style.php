@@ -28,6 +28,17 @@
 		<p>&copy;2018 本文档使用 <a href="https://markdown.win/" target = "_blank">MDtoHTML</a> 构建 | The author <a href="https://www.xiaoz.me/" target = "_blank" title = "小z博客">xiaoz</a></p>
 	</div>
 	<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
+	<script>
+		$(document).ready(function(){
+			//获取第一个H1作为标题
+			var h1 = $("h1").text();
+			//如果获取到了H1
+			if(h1) {
+				$("title").text(h1 + " - MDtoHTML");
+			}
+		});
+	</script>
 </body>
 </html>

@@ -1,36 +1,18 @@
 # MDtoHTML
-MDtoHTML可以快速将Markdown文件转换为HTML
+将任意网络位置上的MarkDown文件渲染为html
 
-### 环境要求
-* PHP且 && CURL
-
-### 示例
-```
-<!DOCTYPE html>
-<html lang="zh-cmn-Hans" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta charset="utf-8" />
-	<title>MDtoHTML</title>
-	<meta name="generator" content="EverEdit" />
-	<meta name="author" content="" />
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-</head>
-<body>
-	<div id="mdtohtml"></div>
-	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$.get("http://markdown.win/api.php?url=http://markdown.win/README.md",function(data,status){
-				if(status == 'success') {
-					$("#mdtohtml").html(data);
-				}
-			});
-		});
-	</script>
-</body>
-</html>
-```
+### 使用
+* 获取一个可以访问的markdown文件地址，比如`http://soft.xiaoz.org/readme.md`
+* 然后访问[https://markdown.win/api.php?url=http://soft.xiaoz.org/readme.md](https://markdown.win/api.php?url=http://soft.xiaoz.org/readme.md "https://markdown.win/api.php?url=http://soft.xiaoz.org/readme.md") 试试效果。
+* API说明请参考 [https://doc.xiaoz.me/](https://doc.xiaoz.me/docs/api/mdtohtml-api)
 
 ### 演示地址
-* [http://markdown.win/](http://markdown.win/api.php?url=https://raw.githubusercontent.com/helloxz/IPinfo/master/readme.md)
+* [https://raw.githubusercontent.com/helloxz/IPinfo/master/readme.md](https://markdown.win/api.php?url=https://raw.githubusercontent.com/helloxz/IPinfo/master/readme.md "https://markdown.win/api.php?url=https://raw.githubusercontent.com/helloxz/IPinfo/master/readme.md")
+* [https://markdown.win/](https://markdown.win/ "https://markdown.win/")
+
+#### 部分效果图
+![](https://imgurl.org/upload/1804/a676d62e14228280.jpg)
+
+### 联系方式
+* Blog:[https://www.xiaoz.me/](https://www.xiaoz.me/)
+* QQ:337003006
