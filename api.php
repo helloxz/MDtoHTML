@@ -17,6 +17,14 @@
 	//对URL进行md5加密用于文件存储
 	$filename = md5($url);
 	$filename = "caches/".$filename.".md";
+	//获取文件修改时间
+	@$ftime = filemtime($filename);
+	(int)@$ftime = date('YmdH',$ftime);
+	(int)$thetime = date('YmdH',time());
+
+	//计算时差
+	$diff = $thetime - $ftime;
+	
 	//获取样式
 	$style = $_GET['style'];
 	//获取方法
@@ -33,7 +41,7 @@
 	}
 
 	//如果文件存在
-	if(is_file($filename)) {
+	if((is_file($filename)) && ($diff <= 1)) {
 		$text = file_get_contents($filename);
 	}
 	//文件不存在

@@ -40,5 +40,6 @@
 			}
 		});
 	</script>
+	<!--页面缓存于<?php echo $ftime; ?>-->
 </body>
 </html>
