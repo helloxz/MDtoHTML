@@ -8,7 +8,7 @@
 	<meta name="keywords" content="MDtoHTML,markdown" />
 	<meta name="description" content="MDtoHTML快速将Markdown文件转换为HTML" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+	<link rel='stylesheet' href='https://libs.xiaoz.top/highlight.js/9.12.0/styles/github.min.css'>
 	<link rel="stylesheet" href="https://libs.xiaoz.top/layui-v2.2.5/layui/css/layui.css">
 	<link rel="stylesheet" href="static/style.css">
 </head>
@@ -27,8 +27,8 @@
 	<div class="footer">
 		<p>&copy;2018 本文档使用 <a href="https://markdown.win/" target = "_blank">MDtoHTML</a> 构建 | The author <a href="https://www.xiaoz.me/" target = "_blank" title = "小z博客">xiaoz</a></p>
 	</div>
-	<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script src = 'https://libs.xiaoz.top/highlight.js/9.12.0/highlight.min.js'></script>
+	<script src = 'https://libs.xiaoz.top/jquery/2.2.4/jquery.min.js'></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 	<script>
 		$(document).ready(function(){
