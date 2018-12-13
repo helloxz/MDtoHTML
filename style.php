@@ -32,11 +32,10 @@
 	<script>hljs.initHighlightingOnLoad();</script>
 	<script>
 		$(document).ready(function(){
-			//获取第一个H1作为标题
-			var h1 = $("h1").text();
-			//如果获取到了H1
-			if(h1) {
-				$("title").text(h1 + " - MDtoHTML");
+			// 设置网页标题为第一个H标签的内容
+			var hText = $(":header:first").text(); // 取第一个标题（Hx）元素
+			if(hText.length > 0) {
+				$('title').text(hText); // 设置文档标题
 			}
 		});
 	</script>
