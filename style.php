@@ -35,7 +35,7 @@
 			// 设置网页标题为第一个H标签的内容
 			var hText = $(":header:first").text(); // 取第一个标题（Hx）元素
 			if(hText.length > 0) {
-				$('title').text(hText); // 设置文档标题
+				$('title').text(hText + " - MDtoHTML"); // 设置文档标题
 			}
 		});
 	</script>
